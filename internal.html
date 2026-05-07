@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal CSS - 10 Selektor</title>
+    <style>
+        * { font-family: sans-serif; }
+        body { background-color: #f4f4f4; } 
+        .card { background: white; padding: 20px; } 
+        #header-logic { color: navy; } 
+        section p { color: gray; } 
+        article > span { font-weight: bold; } 
+        h3 + small { display: block; margin-top: -10px; } 
+        nav ~ footer { border-top: 1px solid #ccc; } 
+        input[disabled] { cursor: not-allowed; } 
+        button:active { transform: scale(0.95); } 
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 id="header-logic">Internal CSS Implementation</h1>
+        <section><p>Ini contoh descendant selector.</p></section>
+        <article><span>Ini child selector.</span></article>
+        <h3>Sub-judul</h3><small>Ini adjacent sibling.</small>
+        <input type="text" disabled value="Attribute selector">
+        <button>Klik Me!</button>
+    </div>
+</body>
+</html>

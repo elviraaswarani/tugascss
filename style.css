@@ -1,0 +1,10 @@
+:root { --primary: #e67e22; }
+li:first-child { color: var(--primary); }
+li:last-child { font-style: italic; }
+li:nth-child(even) { background: #eee; }
+.intro::first-letter { font-size: 200%; color: red; }
+.intro::first-line { font-weight: bold; }
+div:not(.hidden) { display: block; }
+input:focus { border: 2px solid orange; outline: none; }
+.title::before { content: "★ "; }
+.title::after { content: " ★"; }
